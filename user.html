@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./user.js"></script>
+    <script defer src="./user.js"></script>
     <title>User Show Page</title>
 </head>
 <body>
     <h1>Lets get this working!</h1>
-    
+    <form method='GET' action='/'>
+        <label for='workout-search'>Search by a type of workout</label>
+        <select id='workout-search' name='search_term'></select> 
+        <input type='submit' value='Search'>
+    </form>
+
+
+    <section class='workout-container'>
+        <div class='workout-card'></div>
+    </section>
 </body>
 </html>
