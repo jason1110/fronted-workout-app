@@ -35,3 +35,7 @@ section .workout-container {
     align-items: center;
 }
 
+form {
+    display: block;
+}
+

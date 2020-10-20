@@ -1,0 +1,25 @@
+h1 {
+    color: red;
+}
+
+label, input {
+    display: block;
+}
+
+input {
+    margin-bottom: 20px;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+form {
+    width: 300px;
+}
+
+* {
+    box-sizing: border-box;
+}
