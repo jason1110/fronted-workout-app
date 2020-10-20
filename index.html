@@ -13,24 +13,15 @@
 
     <main>
 
-        <form method='GET' action='http://localhost:7000/users'></form>
-            <label for='user-name'>Name</label>
-            <input id='user-name' name='name' placeholder='enter your name'> 
+        <form method='POST' action='http://localhost:7000/login'>
+            <label for='user-name'>Login</label>
+            <input id='user-name' name='username' placeholder='enter your name'> 
+            <input id='password' name='password' placeholder='enter password'> 
+        
             <input type='submit' value='Login'>
         </form>
 
         <button onclick='window.location.href="/createuser.html";'>Create a new User</button>
-
-        <form method='GET' action='/'>
-            <label for='workout-search'>Search by a type of workout</label>
-            <select id='workout-search' name='search_term'></select> 
-            <input type='submit' value='Search'>
-        </form>
-
-
-        <section class='workout-container'>
-            <div class='workout-card'></div>
-        </section>
 
     </main>
     <script src='index.js'></script>
