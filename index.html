@@ -12,9 +12,6 @@
     </header>
 
     <main>
-        <section class='workout-card'>
-            <h3></h3>
-        </section>
 
         <form method='GET' action='http://localhost:7000/users'></form>
             <label for='user-name'>Name</label>
@@ -22,11 +19,18 @@
             <input type='submit' value='Login'>
         </form>
 
+        <form method='GET' action='/createuser.html'></form>
+            <button type='submit'>Create a new user</button>
+        </form>
 
 
         <label for="workout-search">Search by a type of workout</label>
         <select id="workout-search" name="kind">
         </select>
+
+        <section class='workout-container'>
+            <div class='workout-card'></div>
+        </section>
 
     </main>
     <script src='index.js'></script>
