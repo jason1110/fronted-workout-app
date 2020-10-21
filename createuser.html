@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='createuser.css'>
         <script defer src='./createuser.js'></script>
         <title>New User Sign Up</title>
     </head>
@@ -10,12 +11,14 @@
 
         <form method="POST" action="http://localhost:7000/users">
 
-        <label for="user-name">Name:</label>    
-        <input id ="user-name" name="name" type="text" placeholder="Enter Name"> 
+        <label for="user-name">Username:</label>    
+        <input id ="user-name" name="username" type="text" placeholder="Enter Name"> 
+        <label for="name">Name:</label>    
+        <input id ="name" name="name" type="text" placeholder="Enter Name"> 
         <label for="user-weight">Weight:</label>    
         <input id ="user-weight" name="weight" type="text" placeholder="Enter Weight"> 
         <label for="user-activity-level">Name:</label>    
-        <input id ="user-activity-level" name="activity_level" type="number" placeholder="Enter Activity Level"> 
+        <input id ="uqser-activity-level" name="activity_level" type="number" placeholder="Enter Activity Level"> 
         <label for="user-goal">Goal:</label>    
         <input id ="user-goal" name="goal" type="text" placeholder="Enter Goal"> 
         <label for="user-age">Age:</label>    
