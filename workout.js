@@ -22,4 +22,4 @@ fetch(workoutURL)
 
 
 
-{/* <iframe width="1361" height="597" src="https://www.youtube.com/embed/dDI8ClxRS04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+ /* <iframe width="1361" height="597" src="https://www.youtube.com/embed/dDI8ClxRS04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */
