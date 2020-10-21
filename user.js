@@ -4,8 +4,8 @@ const search_term = searchParams.get("search_term")
 const baseURL = 'http://localhost:7000'
 let userPageURL =(`http://localhost:7000/users/${id})`)
 let workoutURL = `${baseURL}/workouts`
-const userURL = `${baseURL}/users`
 const searchForm = document.querySelector('#search-form')
+
 if(search_term) {
     workoutURL = `${workoutURL}?search_term=${search_term}`
 }
@@ -23,9 +23,9 @@ if(id){
         welcome.append(h1)
         
         const programContainer = document.querySelector('#program-container')
-        user.workout.forEach(workouts => {
+        user.workouts.forEach(workout => {
         const li = document.createElement('li')
-        li.textContent = workouts.name
+        li.innerHTML = `<a href="workout.html?workout_id=${workout.id}">${workout.name}</a>`
         programContainer.append(li)
         })
     })

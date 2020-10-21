@@ -1,0 +1,14 @@
+#user-program  {
+    float: right;
+    border-left: inset;
+    border-left: inset;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+}
+
+.workout-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
