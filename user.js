@@ -1,5 +1,5 @@
 const searchParams = new URLSearchParams(window.location.search)
-const id = searchParams.get('id') || localStorage.getItem('id')
+const id = searchParams.get('id') || window.localStorage.getItem('userId')
 const search_term = searchParams.get("search_term")
 const baseURL = 'http://localhost:7000'
 let userPageURL =(`http://localhost:7000/users/${id})`)
@@ -10,7 +10,7 @@ if(search_term) {
     workoutURL = `${workoutURL}?search_term=${search_term}`
 }
 if(id){
-    searchForm.action = localStorage.setItem`http://localhost:3000/user.html?id=${id}`
+    window.localStorage.setItem('userId', `${id}`)
     searchForm.action = `http://localhost:3000/user.html?id=${id}`
 }
 
