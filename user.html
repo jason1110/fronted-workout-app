@@ -8,12 +8,16 @@
 </head>
 <body>
     <h1 id='welcome'></h1>
-    <form method='GET' action='/'>
+    <form id='search-form' method='GET'  action="user.html">
         <label for='workout-search'>Search by a type of workout</label>
         <select id='workout-search' name='search_term'></select> 
         <input type='submit' value='Search'>
     </form>
 
+    <section id='user-program'>
+        <h1>Your program</h1>
+        <ul id='program-container'></ul>
+    </section>
 
     <section class='workout-container'>
         <div class='workout-card'></div>
