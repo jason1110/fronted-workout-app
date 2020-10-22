@@ -31,15 +31,16 @@ if(id){
         .then(workouts => {
             const workoutCards = document.querySelector('.workout-card')
             workouts.forEach(workout => {
-                // console.log(workout)
+                console.log(workout)
                 const workoutName = document.createElement('h2')
                 const addWorkout = document.createElement('form')
-                // const workoutImage = document.createElement('img')
+                const workoutImage = document.createElement('img')
                 addWorkout.method = 'POST'
                 addWorkout.action = 'http://localhost:7000/programs'
                 addWorkout.id = 'add-workout'
+                workoutImage.src = workout.image
+                // workoutImage.innerHTML = `<a href="workout.html?workout_id=${workout.id}"></a>`
                 workoutName.innerHTML = `<a href="workout.html?workout_id=${workout.id}">${workout.name}</a>` 
-                // workoutImage.src = "workout.image"
                 console.log(workout.image)
                 const workoutIdInput = document.createElement('input')
                 const submitWorkout = document.createElement('input')
