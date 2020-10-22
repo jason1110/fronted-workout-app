@@ -13,25 +13,25 @@ header {
     width: auto;
     height: 218px;
     font-size: 30px;
-    text-align: center;
+    justify-content: center;
     display: flex;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    border: 1px solid;
+    background-color: white;
     /* background-image: url("https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80");
     background-size: cover; */
 }
 header img {
     max-width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 .title {
     font-family: 'Alfa Slab One', cursive;
     font-weight: 100;
-    position: absolute;
-    color: #a5b7d4;
+    color: #6b91cf;
 }
 
 main {
@@ -39,6 +39,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10rem;
 }
 
 
