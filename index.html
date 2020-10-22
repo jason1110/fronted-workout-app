@@ -8,21 +8,21 @@
 </head>
 <body>
     <header>
-        <h1 class='title'>Workout App</h1>
+        <h1 class='title'>Workout</h1>
     </header>
 
     <main>
-
+        <section id='login-box'>
         <form method='POST' action='http://localhost:7000/login'>
             <label for='user-name'>Login</label>
             <input id='user-name' name='username' placeholder='enter your name'> 
-            <input id='password' name='password' placeholder='enter password'> 
+            <input type='password' id='password' name='password' placeholder='enter password'> 
         
             <input type='submit' value='Login'>
         </form>
 
         <button onclick='window.location.href="/createuser.html";'>Create a new User</button>
-
+        </section>
     </main>
     <script src='index.js'></script>
 </body>
