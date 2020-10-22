@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='./css/user.css'>
     <script defer src="./user.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');</style>
     <title>User Show Page</title>
+    <i class="fas fa-dumbbell"></i>
 </head>
 <body>
-    <h1 id='welcome'></h1>
-    <form id='search-form' method='GET'  action="user.html">
-        <label for='workout-search'>Search by a type of workout</label>
-        <select id='workout-search' name='search_term'></select> 
-        <input type='submit' value='Search'>
-    </form>
-    <form>
-        <input class='back-button' type='button' value='go back' onclick='history.go(-1)'>
-    </form>
-    <form>
-        <input class='logout-button' type='button' value='logout' onclick="window.location.href= 'http://localhost:3000'">
-    </form>
-
+    <header id='user-header'>
+        <h1 id='welcome'></h1>
+    </header>   
+    <main>
+        <form id='search-form' method='GET'  action="user.html">
+            <label for='workout-search'>Search by a type of workout</label>
+            <select id='workout-search' name='search_term'></select> 
+            <input type='submit' value='Search'>
+        </form>
+        <form>
+            <input class='back-button' type='button' value='go back' onclick='history.go(-1)'>
+        </form>
+        <form>
+            <input class='logout-button' type='button' value='logout' onclick="window.location.href= 'http://localhost:3000'"">
+        </form>
+        <form id='add-workout' method='POST' action='http://localhost:7000/programs'>
+        <i class="fas fa-dumbbell"></i>
+        </form>
+    </main>
     <section id='user-program'>
         <h1>Your program</h1>
         <ul id='program-container'></ul>
     </section>
-    <form id='add-workout' method='POST' action='http://localhost:7000/programs'>
-        
-    </form>
     <section class='workout-container'>
-        <div class='workout-card'></div>
+        
     </section>
 </body>
 </html>
