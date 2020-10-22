@@ -66,6 +66,10 @@ main {
     font-size: 20px;
 }
 
+#program-container {
+    list-style-type: none;
+}
+
 #add-workout{
     font-size: 15px;
 }
