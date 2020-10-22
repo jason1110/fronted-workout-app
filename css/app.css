@@ -1,0 +1,62 @@
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: 'Overpass', sans-serif;
+}
+
+header {
+    margin: auto;
+    width: auto;
+    height: 218px;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: white;
+    /* background-image: url("https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80");
+    background-size: cover; */
+}
+header img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.title {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 100;
+    color: #6b91cf;
+}
+
+main {
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+
+#login-box {
+    background-color: slategray;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-style: double;
+    border-radius: 30px;
+}
+form {
+    margin: 0.8rem;
+}
+
+button {
+    margin: 0.8rem;
+}
