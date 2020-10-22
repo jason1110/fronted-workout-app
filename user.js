@@ -17,7 +17,7 @@ if(id){
     .then(user =>{
         const welcome = document.querySelector('#welcome')
         const h1 = document.createElement('h1')
-        h1.textContent = `Welcome, ${user.username}`
+        h1.textContent = `Welcome, ${user.name}`
         welcome.append(h1)
         const programContainer = document.querySelector('#program-container')
         user.workouts.forEach(workout => {
@@ -55,13 +55,19 @@ if(id){
     fetch(workoutURL)
     .then(response => response.json())
     .then(workouts => {
-        workouts.forEach(workout => {
+        console.log(workouts)
+        const uniqueArr = [...new Set(workouts.map(workout => workout.kind))]
+        console.log(uniqueArr)
+        uniqueArr.forEach(workout => {
+            console.log(uniqueArr)
             const $workoutSelectType = document.getElementById('workout-search')
             const $workoutDropDown = document.createElement('option')
-            $workoutDropDown.innerText = ([...new Set(workout.kind)])
-            $workoutDropDown.value = `${workout.kind}`
+            $workoutDropDown.innerText = workout
+            $workoutDropDown.value = (workout)
             $workoutSelectType.append($workoutDropDown)
         })
     })
-    
-    //delete
+
+    function goBack() {
+        window.history.back()
+    }
