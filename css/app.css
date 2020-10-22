@@ -19,8 +19,6 @@ header {
     background-repeat: no-repeat;
     overflow: hidden;
     background-color: white;
-    /* background-image: url("https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80");
-    background-size: cover; */
 }
 header img {
     max-width: 100%;

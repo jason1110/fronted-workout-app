@@ -6,3 +6,29 @@ body {
     background-color: lightgray;
     font-family: 'Overpass', sans-serif;
 }
+
+#workout-header{
+margin: 0;
+width: auto;
+height: 15%;
+font-size: 30px;
+justify-content: center;
+background-position: top;
+background-repeat: no-repeat;
+background-color: white;
+}
+
+#workout-title {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 100;
+    color: #6b91cf;
+}
+
+main {
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10rem;
+    height: 85%;
+}
