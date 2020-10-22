@@ -39,7 +39,7 @@ if(id){
                 addWorkout.action = 'http://localhost:7000/programs'
                 addWorkout.id = 'add-workout'
                 workoutImage.src = workout.image
-                // workoutImage.innerHTML = `<a href="workout.html?workout_id=${workout.id}"></a>`
+                // workoutImage.innerHTML = `<a href="workout.html?workout_id=${workout.id}"><img src='${workout.image}'></a>`
                 workoutName.innerHTML = `<a href="workout.html?workout_id=${workout.id}">${workout.name}</a>` 
                 console.log(workout.image)
                 const workoutIdInput = document.createElement('input')

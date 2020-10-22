@@ -10,17 +10,40 @@ header {
     background-repeat: no-repeat;
     overflow: hidden;
     background-color: white;
+    border-bottom: slategrey;
 }
 .main {
     font-family: 'Alfa Slab One', cursive;
-    font-weight: 100;
+    font-weight: 90;
     color: #6b91cf;
     display: inline;
+    text-rendering: geometricPrecision;
+    te
+
 }
 
 
+label, input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-
+#creat-button {
+margin-top: 3rem;
+height: 30px;
+width: 100px;
+border-style: solid;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: 'Overpass', sans-serif;
+    border-top: slategray;
+}
 
 label {
     display: flex;
@@ -30,19 +53,16 @@ label {
     margin-top: 1rem;
     font-family: 'Alfa Slab One', cursive;
     font-size: 20px;
-    color: #6b91cf;
+    color: #6B91CF;
 }
 
-
-
-label, input {
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#creat-button {
-margin-top: 3rem;
+.user-input {
+    font-style: italic;
+    text-align: center;
+    border-block-start-color: rgb(73, 73, 78);
+    height: 25px;
+    width: 150px;
+    border-style: ridge;
+    border-radius: 5px;
 
 }
