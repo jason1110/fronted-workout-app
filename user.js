@@ -34,6 +34,7 @@ if(id){
             programList.id =('program-list-id')
             programList.innerHTML = `<a href="workout.html?workout_id=${workout.id}">${workout.name}</a>`
             programContainer.append(programList)
+
         })  
     })
     fetch(workoutURL)
