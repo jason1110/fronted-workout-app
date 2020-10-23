@@ -36,7 +36,7 @@ The Workout Buddy app, built by two flatiron students looking to help people est
 * Login or sign up to use Workout Buddy.
 * Set a username, password, goal, and an activity level to be stored for reference.
 * Sort through various workouts and add them to a specific program taylored by you.
-* Take a look at a demo video for a specific workout that alos contains a description.
+* Take a look at a demo video for a specific workout that also contains a description.
 
 ## Tech
 * Ruby Version 2.6.1
