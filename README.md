@@ -15,7 +15,7 @@
 
 ## Demo Video
 
-[Workout Buddy](https://www.loom.com/share/494a7a707dd94e7bbee160702bbe4fa6?from_recorder=1)
+[Workout Buddy](https://www.loom.com/share/494a7a707dd94e7bbee160702bbe4fa6)
 
 ## Getting Started
 * 1. Go to https://github.com/jr1412594/backend-workout-app, clone the repository
