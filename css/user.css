@@ -3,7 +3,9 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    background-image: url('https://www.autumocrossfit.com/wp-content/uploads/2015/04/Gym-Background1.png');
     background-color: lightgray;
+    color: slategray;
     font-family: 'Overpass', sans-serif;
 }
 
@@ -17,8 +19,9 @@ body {
 #welcome {
     font-family: 'Alfa Slab One', cursive;
     font-weight: 100;
-    padding-top: 0.1%;
-    padding-left: 5%;
+    font-size: 1.5rem;
+    padding-top: 3%;
+    padding-left: 4%;
     padding-bottom: 0%;
     margin-left: 2rem;
     color: #6b91cf;
@@ -26,7 +29,6 @@ body {
 
 #user-program  {
     float: right;
-    border-left: inset;
     border-left: inset;
     padding-left: 45px;
     padding-right: 45px;
@@ -36,7 +38,7 @@ body {
 .workout-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .workout-container .workout-card {
@@ -58,12 +60,22 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.workout-container h2 {
+    font-size: 1.5rem;
+}
+
 main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: left;
     font-size: 20px;
+    padding: 1rem;
+}
+
+#program-container{
+    list-style-type: none;
+    text-align: left;
 }
 
 #add-workout{
@@ -71,14 +83,29 @@ main {
 }
 
 #search-form  input{
-    font-size: 20px;
+    font-size: 15px;
     
 }
 
 .back-button {
-    font-size: 20px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .logout-button {
-    font-size: 20px;
+    font-size: 15px;
+    margin-left: 1000%;
+}
+
+#username {
+    border-bottom: inset;
+}
+
+#goal-box {
+    border-bottom: inset;
+}
+
+#user-program{
+    border-bottom: inset;
 }
