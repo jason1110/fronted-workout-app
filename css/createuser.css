@@ -1,69 +1,85 @@
 
-header {
-    margin: auto;
-    width: auto;
-    height: 218px;
-    font-size: 30px;
-    justify-content: center;
-    display: flex;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-color: white;
-    border-bottom: slategrey;
-}
-.main {
-    font-family: 'Alfa Slab One', cursive;
-    font-weight: 90;
-    color: #6b91cf;
-    display: inline;
-    text-rendering: geometricPrecision;
-
-}
-
-
-
-
-label, input {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#creat-button {
-margin-top: 3rem;
-height: 30px;
-width: 100px;
-border-style: solid;
-}
 body {
     height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
+    background-image: url('https://www.autumocrossfit.com/wp-content/uploads/2015/04/Gym-Background1.png');
     background-color: lightgray;
+    color: slategray;
     font-family: 'Overpass', sans-serif;
-    border-top: slategray;
+}
+
+header {
+    margin: auto;
+    width: auto;
+    height: 218px;
+    font-size: 30px;
+    justify-content: left;
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: slategrey;
+    font-family: 'Alfa Slab One', cursive;
+    color: #6b91cf;
+    padding-top: 1rem;
+    font-weight: 90;
+    
+}
+header h1{
+    padding: 2rem;
+    display: inline;
+    text-rendering: geometricPrecision;
+
+}
+
+@media only screen and (max-width: 650px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+label, input {
+    /* margin-left: auto;
+    margin-right: auto; */
+    
+}
+
+#create-button {
+margin-top: 3rem;
+height: 30px;
+width: 100px;
+border-style: solid;
+}
+
+form {
+    text-align: center;
 }
 
 label {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: auto;
+    /* text-align: center; */
+    /* margin-right: auto; */
     margin-top: 1rem;
-    font-family: 'Alfa Slab One', cursive;
+    /* font-family: 'Alfa Slab One', cursive; */
     font-size: 20px;
     color: #6B91CF;
+    display: inline-block;
+    width: 150px;
 }
 
-.user-input {
+input {
     font-style: italic;
-    text-align: center;
+    /* text-align: center; */
     border-block-start-color: rgb(73, 73, 78);
     height: 25px;
     width: 150px;
     border-style: ridge;
     border-radius: 5px;
-
+    display: inline-block;
 }

@@ -3,30 +3,44 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    background-image: url('https://www.autumocrossfit.com/wp-content/uploads/2015/04/Gym-Background1.png');
     background-color: lightgray;
+    color: slategray;
     font-family: 'Overpass', sans-serif;
 }
 
 #user-header{
     width: auto;
     height: 20%;
-    font-size: 10px;
+    text-align: left;
+    font-size: 1.6rem;
     background-color: white;
 }
 
 #welcome {
     font-family: 'Alfa Slab One', cursive;
     font-weight: 100;
-    padding-top: 0.1%;
-    padding-left: 5%;
+    font-size: 1.6rem;
+    padding-top: 30px;
+    padding-left: 40px;
     padding-bottom: 0%;
-    margin-left: 2rem;
+    margin-left: 10px;
+    margin-top: 0;
     color: #6b91cf;
+}
+
+#welcome h1 {
+    display: inline;
+}
+
+@media only screen and (max-width: 1015px) {
+    h1 {
+        font-size: 2.8rem;
+    }
 }
 
 #user-program  {
     float: right;
-    border-left: inset;
     border-left: inset;
     padding-left: 45px;
     padding-right: 45px;
@@ -36,7 +50,7 @@ body {
 .workout-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .workout-container .workout-card {
@@ -51,6 +65,7 @@ body {
     align-items: center;
 }
 
+
 .workout-container #image-id {
     width: 100%;
     height: 15vw;
@@ -58,16 +73,41 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.workout-container h2 {
+    font-size: 1.5rem;
+}
+
 main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: left;
     font-size: 20px;
+    padding: 1rem;
+}
+
+#program-container{
+    list-style-type: none;
+    text-align: left;
 }
 
 #program-container {
     list-style-type: none;
+}
+
+
+a:link {
+    color:rgb(190, 171, 233);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(148, 145, 145, 0.473);
+}
+
+a:hover {
+    color: rgb(57, 117, 228);
+    text-decoration: underline;
 }
 
 #add-workout{
@@ -75,14 +115,29 @@ main {
 }
 
 #search-form  input{
-    font-size: 20px;
+    font-size: 15px;
     
 }
 
 .back-button {
-    font-size: 20px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .logout-button {
-    font-size: 20px;
+    font-size: 15px;
+    margin-left: 1500%;
+}
+
+#username {
+    border-bottom: inset;
+}
+
+#goal-box {
+    border-bottom: inset;
+}
+
+#user-program{
+    border-bottom: inset;
 }

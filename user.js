@@ -16,9 +16,18 @@ if(id){
     .then(response => response.json())
     .then(user =>{
         const welcome = document.querySelector('#welcome')
+        const userProgram = document.querySelector('#user-program')
+        const usernameLine = document.querySelector('#username')
+        const goalLine = document.querySelector('#goal')
         const h1 = document.createElement('h1')
+        const username = document.createElement('h1')
+        const goal = document.createElement('h3')
         h1.textContent = `Welcome, ${user.name}`
+        username.textContent = user.username
+        goal.textContent = user.goal
         welcome.append(h1)
+        usernameLine.appendChild(username)
+        goalLine.appendChild(goal)
         const programContainer = document.querySelector('#program-container')
         user.workouts.forEach(workout => {
             const programList = document.createElement('li')
@@ -45,14 +54,14 @@ if(id){
                 addWorkout.action = 'http://localhost:7000/programs'
                 addWorkout.id = 'add-workout'
                 workoutImage.src = workout.image
-
+                //workoutImage.innerHTML = `<a href="workout.html?workout_id=${workout.id}"><img src="${workout.image}"></a>` 
                 workoutName.innerHTML = `<a href="workout.html?workout_id=${workout.id}">${workout.name}</a>` 
 
                 const workoutIdInput = document.createElement('input')
                 const submitWorkout = document.createElement('input')
                 const userIdInput = document.createElement('input')
                 submitWorkout.id= 'add-workout'
-                submitWorkout.value = "Add Workout"
+                submitWorkout.value = "Add to Workout"
                 submitWorkout.type = 'submit'
 
                 workoutIdInput.type = 'hidden'

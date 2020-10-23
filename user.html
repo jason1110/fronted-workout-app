@@ -25,15 +25,22 @@
         <form>
             <input class='logout-button' type='button' value='logout' onclick="window.location.href= 'http://localhost:3000'"">
         </form>
+
         <form id='add-workout' method='POST' action='http://localhost:7000/programs'>
         </form>
     </main>
     <section id='user-program'>
-        <h1>Your program</h1>
-        <ul id='program-container'></ul>
+        <h1 id='username'></h1>
+        <div id='goal-box'>
+            <h2>Your Goal</h2>
+            <h3 id='goal'></h3>
+        </div>
+        <div id='program-box'>
+            <h2>Your program</h2>
+            <ul id='program-container'></ul>
+        </div>
     </section>
     <section class='workout-container'>
-        
     </section>
 </body>
 </html>
