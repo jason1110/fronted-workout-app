@@ -30,10 +30,11 @@ if(id){
         goalLine.appendChild(goal)
         const programContainer = document.querySelector('#program-container')
         user.workouts.forEach(workout => {
-        const li = document.createElement('li')
-        li.innerHTML = `<a href="workout.html?workout_id=${workout.id}">${workout.name}</a>`
-        programContainer.append(li)
-        userProgram.append(programContainer)
+            const programList = document.createElement('li')
+            programList.id =('program-list-id')
+            programList.innerHTML = `<a href="workout.html?workout_id=${workout.id}">${workout.name}</a>`
+            programContainer.append(programList)
+
         })  
     })
     fetch(workoutURL)
@@ -63,6 +64,7 @@ if(id){
                 submitWorkout.id= 'add-workout'
                 submitWorkout.value = "Add to Workout"
                 submitWorkout.type = 'submit'
+
                 workoutIdInput.type = 'hidden'
                 workoutIdInput.value = workout.id
                 userIdInput.type = 'hidden'

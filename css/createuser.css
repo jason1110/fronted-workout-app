@@ -15,66 +15,66 @@ header {
     width: auto;
     height: 218px;
     font-size: 30px;
-    justify-content: center;
+    justify-content: left;
     display: flex;
-    background-position: center;
-    background-repeat: no-repeat;
     overflow: hidden;
     background-color: white;
     border-bottom: slategrey;
-}
-.main {
     font-family: 'Alfa Slab One', cursive;
-    font-weight: 90;
     color: #6b91cf;
+    padding-top: 1rem;
+    font-weight: 90;
+    
+}
+header h1{
+    padding: 2rem;
     display: inline;
     text-rendering: geometricPrecision;
 
 }
 
-
-
-
-label, input {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+@media only screen and (max-width: 650px) {
+    h1 {
+        font-size: 2.8rem;
+    }
 }
 
-#creat-button {
+main{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+
+#create-button {
 margin-top: 3rem;
 height: 30px;
 width: 100px;
 border-style: solid;
 }
-body {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    background-color: lightgray;
-    font-family: 'Overpass', sans-serif;
-    border-top: slategray;
+
+form {
+    text-align: center;
 }
 
 label {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: auto;
+    /* text-align: center; */
+    /* margin-right: auto; */
     margin-top: 1rem;
-    font-family: 'Alfa Slab One', cursive;
+    /* font-family: 'Alfa Slab One', cursive; */
     font-size: 20px;
     color: #6B91CF;
+    display: inline-block;
+    width: 150px;
 }
 
-.user-input {
+input {
     font-style: italic;
-    text-align: center;
+    /* text-align: center; */
     border-block-start-color: rgb(73, 73, 78);
     height: 25px;
     width: 150px;
     border-style: ridge;
     border-radius: 5px;
-
+    display: inline-block;
 }

@@ -1,7 +1,11 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     width: 100vw;
-    margin: 0;
     padding: 0;
     background-color: lightgray;
     background-image: url('https://www.autumocrossfit.com/wp-content/uploads/2015/04/Gym-Background1.png');
@@ -12,7 +16,7 @@ body {
 #workout-header{
     width: auto;
     height: 20%;
-    font-size: 30px;
+    font-size: 2rem;
     background-color: white;
 }
 
@@ -27,22 +31,37 @@ body {
 }
 
 main {
-    display: flex;
-justify-content: space-evenly;
+
+
     padding-top: 3rem;
     height: 85%;
+    margin: 0 -5px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 #video-panel{
     float: left;
     padding: 3rem;
+
+    position: sticky;
+
 }
 #info-card {
     float: right;
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    font-size: 1.1rem;
+
 }
 
 
 input {
-    font-size: 20px;
+    font-size: 1.3rem;
+    float: right;
+    margin-right: 5%;
 }
