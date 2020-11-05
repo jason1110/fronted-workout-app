@@ -52,7 +52,7 @@ Made by [Jason Easterly](https://www.linkedin.com/in/jason-e-72522990/), and [Jr
 ## References
 
 * 1. Workout images found on [Unsplash](https://unsplash.com/).
-* 2. Workout demo videos, and descriptions provided by [Bodybuilding](https://www.bodybuilding.com/). 
+* 2. Workout demo videos, and descriptions provided by [Bodybuilding](https://www.bodybuilding.com/).
 
 
 
